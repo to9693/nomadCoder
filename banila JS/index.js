@@ -1,0 +1,70 @@
+let a = 221;
+let b = a-5;
+a = 4;
+// 변수를 생성하고 초기화 하기 전에 let 을 쓴다.
+// 변수를 고정할 때 const(constant, 상수) 를 쓴다.
+// var는 let 처럼 바꿀수 있다. 
+// console.log(b, a);
+
+//  /* */ 사이에 넣으면 여러줄 주석 가능
+
+// 모든 변수는 const 를 기본으로 한다.
+
+/* string
+const what = "353463";
+console.log(what);
+*/
+
+/*
+Bollean
+const wat = true;
+*/
+
+/*
+Number 
+const wat = 666;
+*/
+
+/*
+Float
+const wat = 55.1;
+*/
+
+// camel case 변수명에는 띄어쓰기를 할 수 없으므로 띄어쓰기 대신 대문자를 쓴다.
+// [](브라켓) 리스트로 array를 만든다.
+// {}(컬리 브라켓) 으로 object 를 만든다. dictionary 형태
+// array 와 object 의 차이첨은 objects는 이름을 정할 수 있따.
+const daysOfWeek = ['Mon', 'Tue','Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+
+// console.log(daysOfWeek[2]);
+
+const nicolInfo = {
+    name : "Nico",
+    age: 33,
+    gender : 'Male',
+    inHandsome:true,
+    favMovies : ["Along the gods", 'LOTR', 'Oldboy'],
+    favFodd:[
+        {name:'Kimchi', fatty:false}, 
+        {name:'Chessebuger', fatty:true}
+    ]
+};
+// array 안에 object, object 안에 array
+
+nicolInfo.gender = 'Female'
+// cost로 nicolInfo 로 고정했지만 변경가능
+// console.log(nicolInfo);
+
+// console.log(console)
+
+console.log('Grettings Nicolas')
+console.log('Grettings Jun')
+console.log('Grettings Liyn')
+console.log('Grettings Dal')
+
+function sayHello(potato, age){
+    console.log('Hello!', potato, 'you have', age,
+    'years of age');
+}
+// 함수 안에 넣는 변수를 인자(argument)라고 함.
+sayHello('NIcolas', 15);
