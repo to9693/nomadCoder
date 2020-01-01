@@ -57,14 +57,69 @@ nicolInfo.gender = 'Female'
 
 // console.log(console)
 
-console.log('Grettings Nicolas')
-console.log('Grettings Jun')
-console.log('Grettings Liyn')
-console.log('Grettings Dal')
+// console.log('Grettings Nicolas')
+// console.log('Grettings Jun')
+// console.log('Grettings Liyn')
+// console.log('Grettings Dal')
 
 function sayHello(potato, age){
     console.log('Hello!', potato, 'you have', age,
     'years of age');
 }
 // 함수 안에 넣는 변수를 인자(argument)라고 함.
-sayHello('NIcolas', 15);
+// sayHello('NIcolas', 15);
+
+function sayHi(name, age){
+    return `Hi ${name} you are ${age} years old`
+};
+// `` 백틱을 사용한다.
+
+const greetNicolas = sayHi('Nicolas', 28 )
+
+// console.log(greetNicolas)
+
+
+const calculator ={
+    plus: function(a,b){
+        return a+b;
+    },
+    minus: function(a,b){
+        return a-b;
+    },
+    multiple: function(a,b){
+        return a*b;
+    },
+    division: function(a,b){
+        return a/b;
+    },
+    square: function(a,b){
+        return a**b;
+    }
+}
+
+// console.log(greetNicolas)
+const plus = calculator.plus(5,5)
+const minus = calculator. minus(5,5)
+const multiple = calculator.multiple(5,5)
+const division = calculator.division(5,5)
+const square = calculator.square(5,5)
+
+// console.log('result :', plus, minus, multiple, division, square)
+// console.log(`result : ${plus} ${minus} ${multiple} ${division} ${square}`)
+
+ 
+
+const title = document.querySelector('#title');
+
+console.log(title)
+
+title.innerHTML = 'Hi! From JS';
+title.style.color ='white';
+document.title = 'I own you now';
+
+
+function handelClick(event){
+    title.style.color = 'blue';
+}
+
+title.addEventListener('click', handelClick);
