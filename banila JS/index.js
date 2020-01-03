@@ -111,15 +111,58 @@ const square = calculator.square(5,5)
 
 const title = document.querySelector('#title');
 
-console.log(title)
+const CLICKED_CLASS = 'clicked';
+
+/* function handelClick() {
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    if(!hasClass) {
+        title.classList.add(CLICKED_CLASS);
+    } else {
+        title.classList.remove(CLICKED_CLASS);
+    }
+} */
+
+function handelClick(){
+    title.classList.toggle(CLICKED_CLASS);
+}
+//  toggle 로 add와 remove를 한꺼번에 대채할 수 있음
+function init() {
+    title.addEventListener('click', handelClick);
+}
+init();
+
+/*const BASE_COLOR = 'white';
+const OTHER_COLOR = '#9c88ff';
 
 title.innerHTML = 'Hi! From JS';
 title.style.color ='white';
 document.title = 'I own you now';
 
 
-function handelClick(event){
-    title.style.color = 'blue';
+function handelClick(){
+    const currentColor = title.style.color;
+    if (currentColor === BASE_COLOR) {
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
 }
 
-title.addEventListener('click', handelClick);
+function init() {
+    title.style.color = 'BASE_COLOR';
+    title.addEventListener('mouseenter', handelClick);
+}
+init(); */
+
+// 다양한 event 들은 MDN을 찾으면 나옴
+
+
+/*const age = prompt('How old are you');
+if (age >= 18 && age <= 21) {
+    console.log('you can drink but you should not');
+} else if (age >21) {
+    console.log('go ahed');
+} else {
+    console.log('too young');
+}*/
+
